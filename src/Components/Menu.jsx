@@ -1,21 +1,20 @@
-import React from 'react'
-import {Navbar, Nav, Container} from 'react-bootstrap'
-
+import React from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
 
 export const menu = () => {
   return (
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">NewsPe</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">History</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          <Navbar.Brand href="/home">NewsPe</Navbar.Brand>
+          <Nav className="justify-content-end">
+            <Nav.Link href="/aboutus">AboutUs</Nav.Link>
+            <Nav.Link href="/history">History</Nav.Link>
+            <Nav.Link href="/login">Log In</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
-      </>
-  )
-}
+    </>
+  );
+};
 export default menu;
