@@ -6,7 +6,7 @@ export const menu = () => {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/home">NewsPe</Navbar.Brand>
+          <Navbar.Brand href="/">NewsPe</Navbar.Brand>
           <Nav className="justify-content-end">
             <Nav.Link href="/aboutus">AboutUs</Nav.Link>
             <Nav.Link href="/history">History</Nav.Link>

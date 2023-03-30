@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button, Form, Container, Row, Col } from "react-bootstrap";
 
 export const login = () => {
   return (
-    <div style={{ backgroundColor: "white", height: "100vh" }}>
+    <div style={{ backgroundColor: "#F2F2F2", height: "100vh" }}>
       <Container>
         <Row
           className="justify-content-center align-items-center"
@@ -13,31 +14,44 @@ export const login = () => {
             xs={12}
             sm={8}
             md={6}
-            lg={3}
-            xl={8}
+            lg={4}
             style={{
-              backgroundColor: "#f2f2f2",
-              padding: "20px",
+              backgroundColor: "#FFFFFF",
+              padding: "40px",
               marginTop: "60px",
-              maxWidth: "500px",
+              borderRadius: "10px",
             }}
           >
+            <h3 className="text-center mb-4">Login</h3>
             <Form>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="email" placeholder="Username or Email" />
+                <Form.Label>Email address</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" />
                 <Form.Text className="text-muted">
-                  We Will never share your email with anyone else. 
+                  We'll never share your email with anyone else.
                 </Form.Text>
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label>Password</Form.Label>
                 <Form.Control type="password" placeholder="Password" />
               </Form.Group>
+
               <div className="d-grid gap-2">
                 <Button variant="primary" type="submit">
-                  LOGIN
+                  Login
                 </Button>
-                <p>Forget Password?</p>
+                <div className="text-center mt-3">
+                  <Button variant="outline-secondary" className="me-2">
+                    Google
+                  </Button>
+                  <Button variant="outline-secondary">Twitter</Button>
+                </div>
+                <div className="text-center mt-3">
+                  <Link to="/forgot-password" className="text-muted">
+                    Forgot Password?
+                  </Link>
+                </div>
               </div>
             </Form>
           </Col>
