@@ -6,6 +6,7 @@ import {Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import AboutUs from "./Components/AboutUs";
 import History from "./Components/History";
+import ForgotPassword from "./Components/ForgotPassword";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="" element = {<Home />} />
         <Route path="aboutus" element = {<AboutUs />} />
         <Route path="history" element = {<History />} />
+        <Route path="forgot-password" element = {<ForgotPassword />} />
       </Routes>
     </>
   );

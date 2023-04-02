@@ -5,7 +5,7 @@ export const menu = () => {
   return (
     <>
       <Navbar bg="dark" variant="dark">
-        <Container>
+        <Container style={{ color: "black" }}>
           <Navbar.Brand href="/">NewsPe</Navbar.Brand>
           <Nav className="justify-content-end">
             <Nav.Link href="/aboutus">AboutUs</Nav.Link>
